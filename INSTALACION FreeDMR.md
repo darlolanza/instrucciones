@@ -39,7 +39,8 @@ apt-get install mariadb-server mariadb-client -y
 mysql_secure_installation
 ```
 
-<b>Precionamos ENTER y seguimos las instrucciones de la instalación de mariaDB.</b>
+<b>Precionamos ENTER <br> y seguimos las instrucciones de la instalación de mariaDB.</b>
+
 
 			NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
 			      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
