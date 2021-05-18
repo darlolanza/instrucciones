@@ -1,6 +1,6 @@
-*Instalacion de FreeDMR desde backup en Github*
+*Instalacion de FreeDMR desde backup en Github
 
-#####Recomendacion ejecutar todo con usuario root
+#####Recomendacion ejecutar todo con usuario root 
 
 ```terminal
 cd /
