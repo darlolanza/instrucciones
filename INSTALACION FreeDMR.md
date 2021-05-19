@@ -435,6 +435,12 @@ lu9xrl@gmail.com
 
 Extraido de los instructivos de cada autor de los servicios a instalar. El 90% del credito va para ellos.
 
+FreeDMR is a DMR server, which is originally derived from the HBLink3 project. It aims to further extend the work of the Cortney Buffington, N0MJS and others. My thanks goes out to all who have made this project possible. (@hacknix dixit)
+
+Python 3 implementation of N0MJS HBmonitor for HBlink https://github.com/kc1awv/hbmonitor3
+Copyright (C) 2013-2018 Cortney T. Buffington, N0MJS n0mjs@me.com
+This is version of HBMonitor V2 by SP2ONG 2019-2021
+
 
 
 
