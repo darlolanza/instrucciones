@@ -341,10 +341,50 @@ En unos instantes se descargará el paquete principal junto con todas sus depend
 
 Cada vez que hagamos cambios en la configuración de Apache estos no causarán efecto hasta que se recargue la configuración del servicio, lo que haremos con systemctl:
 
-``systemctl reload apache2``
+```terminal 
+systemctl reload apache2
+```
+Ahora para instalar PHP en Debian 10 Buster
 
 ```terminal
+apt update && sudo apt -y upgrade
+```
 
+```terminal
+wget -O /etc/apt/trusted.gpg.d/php-sury.org.gpg https://packages.sury.org/php/apt.gpg
+```
+
+Creamos el archivo de configuración para el repositorio:
+
+```terminal
+nano /etc/apt/sources.list.d/php-sury.org.list
+```
+
+Con la siguiente línea como contenido:
+```terminal
+deb http://packages.sury.org/php/ buster main
+```
+
+Guardamos los cambios y actualizamos la información de las listas de paquetes:
+```terminal
+sudo apt update
+```
+
+Seguramente haya actualizaciones al activar este repositorio, así que actualizaremos los paquetes necesarios:
+
+```terminal
+sudo apt upgrade -y
+```
+Luego
+
+```terminal
+apt -y install libapache2-mod-php
+```
+
+```terminal
+systemctl reload apache2
+```
+<b>Ahora procedemos a la instalacion del Monitor propiamente dicha.</b>
 
 ```terminal
 cd /opt
@@ -364,6 +404,21 @@ cp config_SAMPLE.py config.py
 ```terminal
 nano config.py
 ```
+<b>MUY IMPORTANTE, copiamos el contenido de la carpeta /opt/HBMonv2/ a /var/www/html</b>
+
+```terminal
+cp /opt/HBMonv2/html /var/www/html
+```
+Espero que este comando anterior funcione...
+
+Luego
+
+```terminal
+cp utils/lastheard /etc/cron.daily/
+
+chmod +x /etc/cron.daily/lastheard
+```
+
 <b>Finalmente copiamos y ejecutamos el servicio del Monitor.</b>
 
 ```terminal
