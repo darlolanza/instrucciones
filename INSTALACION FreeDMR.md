@@ -431,6 +431,9 @@ systemctl status hbmon
 ```
 
 Con amor LU9XRL.
+lu9xrl@gmail.com
+
+Extraido de los instructivos de cada autor de los servicios a instalar. El 90% del credito va para ellos.
 
 
 
