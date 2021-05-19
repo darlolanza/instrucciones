@@ -337,7 +337,11 @@ Hecho esto ya podemos instalar Apache. El paquete que necesitamos es apache2, as
 ```terminal
 apt -y install apache2
 ```
-En unos instantes se descargará el paquete principal junto con todas sus dependencias. Una vez instalado todo el software, el nuevo servicio apache2 queda activado y en ejecución. Esto lo podemos comprobar mediante el comando ```terminal systemctl status apache2```
+En unos instantes se descargará el paquete principal junto con todas sus dependencias. Una vez instalado todo el software, el nuevo servicio apache2 queda activado y en ejecución. Esto lo podemos comprobar mediante el comando ```systemctl status apache2```
+
+Cada vez que hagamos cambios en la configuración de Apache estos no causarán efecto hasta que se recargue la configuración del servicio, lo que haremos con systemctl:
+
+``systemctl reload apache2``
 
 ```terminal
 
