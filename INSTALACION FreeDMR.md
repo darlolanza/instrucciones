@@ -327,6 +327,21 @@ systemctl status freedmr.service
 
 #####Instalacion de Hbmonitor
 
+<em>Para instalar Apache en Debian 10 utilizaremos los paquetes que incluye la propia distribución en sus repositorios oficiales.</em>
+
+```terminal
+apt update && sudo apt -y upgrade
+```
+Hecho esto ya podemos instalar Apache. El paquete que necesitamos es apache2, así que lo instalamos mediante apt:
+
+```terminal
+apt -y install apache2
+```
+En unos instantes se descargará el paquete principal junto con todas sus dependencias. Una vez instalado todo el software, el nuevo servicio apache2 queda activado y en ejecución. Esto lo podemos comprobar mediante el comando ```terminal systemctl status apache2```
+
+```terminal
+
+
 ```terminal
 cd /opt
 
