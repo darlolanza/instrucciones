@@ -1,4 +1,4 @@
-# Instalacion de FreeDMR desde backup en Github
+# Instalacion de FreeDMR y HBMonv2 desde backup en Github
 
 Recomendacion ejecutar todo con usuario root 
 <em><b>las lineas separadas por un espacio ejecutar de a una, las que estan junta se pueden ejecutar de una vez.</b></em>
