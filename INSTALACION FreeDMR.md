@@ -15,7 +15,7 @@ cd /opt
 
 git clone https://github.com/hacknix/FreeDMR.git
 
-cd /FreeDMR
+cd FreeDMR
 
 chmod 0755 install.sh
 ./install.sh
