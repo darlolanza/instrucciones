@@ -33,6 +33,16 @@ apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
 
 add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mirror.ufro.cl/mariadb/repo/10.5/debian buster main'
 ```
+Servidor en Uruguay para MariDB
+
+```terminal
+apt-get install software-properties-common dirmngr
+
+apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+
+add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://espejito.fder.edu.uy/mariadb/repo/10.5/debian buster main'
+``
+
 Servidor en New York para MariaDB
 
 ```terminal
