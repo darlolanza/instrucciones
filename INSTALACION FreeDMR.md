@@ -50,7 +50,9 @@ apt-get install software-properties-common gnupg2 -y
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xF1656F24C74CD1D8
 
 add-apt-repository 'deb [arch=amd64] http://mariadb.mirror.liquidtelecom.com/repo/10.4/debian buster main'
+```
 
+```terminal
 apt-get update
 
 apt-get install mariadb-server mariadb-client -y
