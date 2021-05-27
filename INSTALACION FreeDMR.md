@@ -22,26 +22,30 @@ chmod 0755 install.sh
 
 apt-get update
 
-apt-get install software-properties-common gnupg2 -y
-
 apt-get upgrade -y
 ```
+Servidor en Chile para MariaDB
 
 ```terminal
-	apt-get install software-properties-common dirmngr
+apt-get install software-properties-common dirmngr
 
-	apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
 
-	add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mirror.ufro.cl/mariadb/repo/10.5/debian buster main'
+add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mirror.ufro.cl/mariadb/repo/10.5/debian buster main'
+```
+Servidor en New York para MariaDB
 
-
-> sudo apt-get install software-properties-common dirmngr
+```terminal
+sudo apt-get install software-properties-common dirmngr
 	
-> sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
 	
-> sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.5/debian buster main'
+sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.5/debian buster main'
+```
+Servidor en ... para MariaDB
 
-
+```terminal
+apt-get install software-properties-common gnupg2 -y
 
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xF1656F24C74CD1D8
 
