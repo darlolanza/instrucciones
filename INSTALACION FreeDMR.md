@@ -52,15 +52,6 @@ apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
 	
 add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.5/debian buster main'
 ```
-Servidor en ... para MariaDB
-
-```terminal
-apt-get install software-properties-common gnupg2 -y
-
-apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xF1656F24C74CD1D8
-
-add-apt-repository 'deb [arch=amd64] http://mariadb.mirror.liquidtelecom.com/repo/10.4/debian buster main'
-```
 
 ```terminal
 apt-get update
