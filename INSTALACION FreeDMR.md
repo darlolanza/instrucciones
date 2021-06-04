@@ -153,7 +153,7 @@ GRANT ALL PRIVILEGES ON hblink.*TO 'hblink'@'localhost';
 
 ```terminal
 CREATE TABLE `repeaters` (
-  `CALLSIGN` varchar(8) NOT NULL,
+  `CALLSIGN` varchar(12) NOT NULL,
   `MODE` varchar(8) NOT NULL DEFAULT 'MASTER',
   `ENABLED` tinyint(1) NOT NULL DEFAULT 1,
   `_REPEAT` tinyint(1) NOT NULL DEFAULT 1,
