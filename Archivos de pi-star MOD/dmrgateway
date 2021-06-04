@@ -78,6 +78,7 @@ Name=FreeDMR_RADHISTEC
 Options="TS2=37030;TIMER=50"
 TGRewrite1=2,7000001,2,1,999999
 TypeRewrite0=2,7004000,2,4000
+SrcRewite0=2,1,2,7000001,999999
 
 [DMR Network 3]
 Enabled=0
