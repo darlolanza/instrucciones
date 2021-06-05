@@ -296,7 +296,7 @@ cp FreeDMR-SAMPLE-commented.cfg config/FreeDMR.cfg
 
 cp rules_SAMPLE.py config/rules.py
 
-cp /opt/FreeDMR/systemd-scripts/freedmrrepeaters.service /lib/systemd/system/freedmr.service
+cp /opt/FreeDMR/systemd-scripts/freedmrrepeater.service /lib/systemd/system/freedmr.service
 ```
 
 <b>Creamos el archivo encargado de correr la base de datos.</b>
