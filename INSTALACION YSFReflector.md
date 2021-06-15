@@ -81,3 +81,48 @@ mv /var/www/ysf/setup.php /root/reflector-install-files/ysfdash/original-setup.p
 systemctl daemon-reload
 service ysfreflector start
 ```
+
+
+
+
+
+
+OTRO MAS
+
+echo iniciando instalacion
+
+cd /opt
+git clone https://github.com/iu5jae/pYSFReflector.git
+cd pYSFReflector/
+#cp YSFReflector /usr/local/sbin/
+#cp YSFReflector.ini /usr/local/etc/
+
+cp YSFReflector /usr/local/bin/
+chmod +x /usr/local/bin/YSFReflector
+mkdir /etc/YSFReflector
+
+cp YSFReflector.ini /etc/YSFReflector/
+cd /etc/YSFReflector/
+sudo sed -i 's/FilePath=\/var\/log/FilePath=\/var\/log\/YSFReflector/' YSFReflector.ini
+sudo sed -i 's/42395/42000/' YSFReflector.ini
+cd /opt/pYSFReflector/
+cp deny.db /usr/local/etc/
+chmod +x /usr/local/bin/YSFReflector
+cd systemd/
+cp YSFReflector.service /lib/systemd/system
+
+sudo groupadd mmdvm
+sudo useradd mmdvm -g mmdvm -s /sbin/nologin
+mkdir /var/log/YSFReflector
+sudo chown -R mmdvm:mmdvm /var/log/YSFReflector
+
+###############################
+
+mkdir /opt/YSF2DMR
+
+cd /opt
+git clone https://github.com/juribeparada/MMDVM_CM.git
+sudo cp -r /opt/MMDVM_CM/YSF2DMR /opt/
+cd YSF2DMR
+sudo make
+sudo make install
